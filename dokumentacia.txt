@@ -1,0 +1,4 @@
+~ gap / padding / margin
+1. 16px - medzi elementami v 1 div
+2. 32px - medzi viacerymi parent elementami
+3. 64px - 3 stupen pre medzeru medzi velkymi elementami
