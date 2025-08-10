@@ -1,10 +1,10 @@
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
-import { CustomEase} from "gsap/CustomEase"
+import { CustomEase } from "gsap/CustomEase";
 
 gsap.registerPlugin(CustomEase, SplitText);
 
-export function PreloaderAnim() {
+export function PreloaderAnim(onComplete?: () => void) {
   document.body.style.overflow = "hidden";
 
   CustomEase.create("hop", ".8, 0, .3, 1");
@@ -120,6 +120,7 @@ export function PreloaderAnim() {
       duration: 1,
       onComplete: () => {
         document.body.style.overflow = "";
+        if (onComplete) onComplete();
       }
-    }, 6);
+    });
 }

@@ -5,10 +5,14 @@ import { PreloaderAnim } from "@/animations/PreloaderAnim";
 
 import { PreloaderText } from "@/data/data";
 
-export default function PreLoader() {
+interface PreLoaderProps {
+  onComplete: () => void;
+}
+
+export default function PreLoader({ onComplete }: PreLoaderProps) {
   useEffect(() => {
-    PreloaderAnim();
-  }, []);
+    PreloaderAnim(onComplete);
+  }, [onComplete]);
 
   return (
     <>
