@@ -1,7 +1,7 @@
 "use client";
 import { gsap } from "gsap";
 
-export const setupNavigationAnimation = (container: HTMLElement) => {
+export const NavigationAnim = (container: HTMLElement) => {
   gsap.set(".menu-link-item-holder", { y: 60 });
 
   const tl = gsap

@@ -6,12 +6,17 @@ import { PreloaderAnim } from "@/animations/PreloaderAnim";
 import { PreloaderText } from "@/data/data";
 
 interface PreLoaderProps {
-  onComplete: () => void;
+  onComplete?: () => void;  // teraz je voliteľné
 }
 
 export default function PreLoader({ onComplete }: PreLoaderProps) {
   useEffect(() => {
-    PreloaderAnim(onComplete);
+    if (onComplete) {
+      PreloaderAnim(onComplete);
+    } else {
+      // Ak onComplete nie je, môžeš tu napr. spustiť animáciu bez callbacku
+      PreloaderAnim(() => {});  // alebo vynechať animáciu úplne
+    }
   }, [onComplete]);
 
   return (

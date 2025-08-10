@@ -14,6 +14,8 @@ import { useIsOnFooter } from "@/hooks/useIsOnFooter";
 
 import { Brand } from "@/data/data";
 
+import { setupBorderOnScroll } from "@/animations/BorderAnim";
+
 export default function Navigation() {
   const container = useRef<HTMLDivElement | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -60,6 +62,16 @@ export default function Navigation() {
       document.body.classList.remove("overflow-hidden");
     };
   }, [isMenuOpen]);
+
+  useEffect(() => {
+    if (!headerRef.current) return;
+
+    const cleanup = setupBorderOnScroll(headerRef.current);
+
+    return () => {
+      cleanup();
+    };
+  }, []);
 
   return (
     <header ref={container}>
