@@ -48,8 +48,9 @@ export function PreloaderAnim(onComplete?: () => void) {
     pointerEvents: "auto",
   });
 
+  // Úvodný polygon – plný obdĺžnik (bez stredovej čiary)
   gsap.set(".split-overlay", {
-    clipPath: "polygon(0 50%, 100% 50%, 100% 50%, 0 50%)",
+    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
   });
 
   gsap.set(".split-overlay .intro-title .first-char", {
@@ -99,11 +100,12 @@ export function PreloaderAnim(onComplete?: () => void) {
       fontSize: isMobile ? "6rem" : "14rem",
       duration: 0.75,
       onComplete: () => {
+        // iOS-safe verzia polygonov (±0.01%)
         gsap.set(".preloader", {
-          clipPath: "polygon(0 0, 100% 0, 100% 50%, 0 50%)",
+          clipPath: "polygon(0 0, 100% 0, 100% 50.01%, 0 50.01%)",
         });
         gsap.set(".split-overlay", {
-          clipPath: "polygon(0 50%, 100% 50%, 100% 100%, 0 100%)",
+          clipPath: "polygon(0 49.99%, 100% 49.99%, 100% 100%, 0 100%)",
         });
       },
     }, 4.5)
