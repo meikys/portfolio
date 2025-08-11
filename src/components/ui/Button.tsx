@@ -13,7 +13,7 @@ export default function Button({
   className = '',
 }: ButtonProps) {
   const baseStyles =
-    'relative overflow-hidden flex items-center rounded-[5px] p-[20px] text-[0.8rem] tracking-[0.5%] leading-[150%] uppercase font-bold cursor-pointer before:content-[""] before:absolute before:left-0 before:top-0 before:h-full before:w-[40%] before:rounded-[500px] before:transition-all before:duration-300 hover:before:w-full before:z-0'
+    'relative overflow-hidden flex items-center lg:items-start rounded-[5px] p-[15px] text-[0.8rem] tracking-[0.5%] leading-[150%] uppercase font-bold cursor-pointer before:content-[""] before:absolute before:left-0 before:top-0 before:h-full before:w-[35%] before:rounded-[50px] before:transition-all before:duration-300 hover:before:w-full before:z-0'
 
   const variantStyles =
     variant === 'primary'

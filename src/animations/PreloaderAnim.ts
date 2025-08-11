@@ -107,17 +107,11 @@ export function PreloaderAnim(onComplete?: () => void) {
         });
       },
     }, 4.5)
-    .to(".container", {
-      clipPath: "polygon(0% 48%, 100% 48%, 100% 52%, 0% 52%)",
-      duration: 1,
-    }, 5)
     .to([".preloader", ".split-overlay"], {
       y: (i) => (i === 0 ? "-51%" : "51%"),
       duration: 1,
     }, 6)
     .to(".container", {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      duration: 1,
       onComplete: () => {
         document.body.style.overflow = "";
         if (onComplete) onComplete();

@@ -14,8 +14,7 @@ export default function PreLoader({ onComplete }: PreLoaderProps) {
     if (onComplete) {
       PreloaderAnim(onComplete);
     } else {
-      // Ak onComplete nie je, môžeš tu napr. spustiť animáciu bez callbacku
-      PreloaderAnim(() => {});  // alebo vynechať animáciu úplne
+      PreloaderAnim(() => {});
     }
   }, [onComplete]);
 

@@ -17,6 +17,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   minimumScale: 1,
   userScalable: false,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -26,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} pt-safe pb-safe md:pt-0 md:pb-0`}>
         {children}
       </body>
     </html>

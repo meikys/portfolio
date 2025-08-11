@@ -99,7 +99,7 @@ export default function Navigation() {
             </Link>
           </div>
           <div className="menu-open">
-            <ul className="hidden lg:flex flex-row gap-[32px]">
+            <ul className="hidden lg:flex flex-row gap-[32px] font-[500]">
               {NavLinks.map((link, index) => (
                 <li className="flex" key={index}>
                   <Link href={link.path}>{link.label}</Link>
@@ -136,7 +136,7 @@ export default function Navigation() {
                     className="relative menu-link-item-holder z-20"
                     onClick={toggleMenu}
                   >
-                    <Link href={link.path} className="menu-link">
+                    <Link href={link.path} className="menu-link font-[500]">
                       {link.label}
                     </Link>
                   </div>

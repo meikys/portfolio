@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 :root {
+  --safe-top: env(safe-area-inset-top);
+  --safe-bottom: env(safe-area-inset-bottom);
+
   --bg-primary: #FFFFFF;
   --bg-secondary: #F9F9F9;
 }
@@ -11,6 +14,15 @@ html {
 
 body {
   @apply bg-[#fff] text-[#000] text-[1rem] overflow-x-hidden
+}
+
+@layer utilities {
+  .pt-safe {
+    padding-top: var(--safe-top);
+  }
+  .pb-safe {
+    padding-bottom: var(--safe-bottom);
+  }
 }
 
 .menu-bar, .menu-overlay-bar {
