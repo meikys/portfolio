@@ -10,15 +10,10 @@
 
 html {
   scroll-behavior: smooth;
-  max-width: 100%;
-  overflow-x: hidden;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 body {
-  @apply bg-[#fff] text-[#000] text-[1rem];
+  @apply bg-[#fff] text-[#000] text-[1rem] overflow-x-hidden
 }
 
 @layer utilities {
@@ -31,7 +26,7 @@ body {
 }
 
 .menu-bar, .menu-overlay-bar {
-  @apply fixed top-0 left-0 w-[100%] h-[55px] px-[2em] flex justify-between items-center z-90
+  @apply fixed top-0 left-0 w-[100vw] h-[55px] px-[2em] flex justify-between items-center z-90
 }
 
 .menu-bar a, .menu-open span {
@@ -43,11 +38,10 @@ body {
 }
 
 .menu-overlay {
-  @apply fixed top-0 left-0 w-full h-screen p-[2em] text-[#fff] bg-[#000] z-100 flex;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  @apply fixed top-0 left-0 w-[100vw] h-screen p-[2em] text-[#fff] bg-[#000] z-100 flex;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
   overflow: hidden;
 }
-
 
 .menu-close-icon {
   @apply flex items-end cursor-pointer;
@@ -123,9 +117,8 @@ body {
 .split-overlay,
 .tags-overlay {
   position: fixed;
-  max-width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
+  width: 100vw;
+  height: 100svh;
 }
 
 .preloader,

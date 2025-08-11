@@ -47,12 +47,66 @@ export default function Navigation() {
     { scope: container }
   );
 
+  useEffect(() => {
+    if (!tl.current) return;
+
+    if (isMenuOpen) {
+      tl.current.play();
+
+      document.body.classList.add("overflow-hidden");
+    } else {
+      tl.current.reverse();
+
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isMenuOpen]);
+
+  useEffect(() => {
+    if (!headerRef.current) return;
+
+    const cleanup = setupBorderOnScroll(headerRef.current);
+
+    return () => {
+      cleanup();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!tl.current) return;
+
+    if (isMenuOpen) {
+      tl.current.play();
+      document.body.classList.add("overflow-hidden");
+    } else {
+      tl.current.reverse();
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isMenuOpen]);
+
+  useEffect(() => {
+    if (!headerRef.current) return;
+
+    const cleanup = setupBorderOnScroll(headerRef.current);
+
+    return () => {
+      cleanup();
+    };
+  }, []);
+
   return (
     <header ref={container}>
       <nav>
         <div
           ref={headerRef}
-          className={`menu-bar fixed top-0 w-[100%] z-50 transition-colors duration-100 ${
+          className={`menu-bar fixed top-0 w-full z-50 transition-colors duration-100 ${
             isOnFooter
               ? "bg-black text-white"
               : "bg-[var(--bg-secondary)] text-black"
