@@ -20,7 +20,7 @@ export default function PreLoader({ onComplete }: PreLoaderProps) {
 
   return (
     <>
-      <div className="preloader fixed inset-0 z-50 bg-black flex items-center justify-center flex-col pointer-events-none pt-safe pb-safe md:pt-0 md:pb-0">
+      <div className="preloader fixed inset-0 z-50 bg-black flex items-center justify-center flex-col pointer-events-none pt-safe pb-safe md:pt-0 md:pb-0 overflow-x-hidden">
         <div className="intro-title opacity-0 ">
           <h1 className="text-white text-[2rem] tracking-[-2%] font-bold ">{PreloaderText.brandName}</h1>
         </div>

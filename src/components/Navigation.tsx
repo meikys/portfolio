@@ -74,7 +74,7 @@ export default function Navigation() {
   }, []);
 
   return (
-    <header ref={container}>
+    <header ref={container} className="pt-safe pb-safe md:pt-0 md:pb-0">
       <nav>
         <div
           ref={headerRef}
