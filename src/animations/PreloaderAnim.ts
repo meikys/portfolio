@@ -108,7 +108,7 @@ export function PreloaderAnim(onComplete?: () => void) {
       },
     }, 4.5)
     .to([".preloader", ".split-overlay"], {
-      y: (i) => (i === 0 ? "-51%" : "51%"),
+      y: (i) => (i === 0 ? "-100%" : "100%"),
       duration: 1,
     }, 6)
     .to(".container", {
