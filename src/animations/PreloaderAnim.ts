@@ -114,6 +114,7 @@ export function PreloaderAnim(onComplete?: () => void) {
     .to(".container", {
       onComplete: () => {
         document.body.style.overflow = "";
+        gsap.set([".preloader", ".split-overlay"], { display: "none" });  // <-- tu je pridane
         if (onComplete) onComplete();
       }
     });
