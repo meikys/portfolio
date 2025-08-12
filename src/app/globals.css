@@ -4,8 +4,8 @@
   --safe-top: env(safe-area-inset-top);
   --safe-bottom: env(safe-area-inset-bottom);
 
-  --bg-primary: #FFFFFF;
-  --bg-secondary: #F9F9F9;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9f9f9;
 }
 
 html {
@@ -13,7 +13,11 @@ html {
 }
 
 body {
-  @apply bg-[#fff] text-[#000] text-[1rem] overflow-x-hidden
+  @apply bg-[#fff] text-[#000] text-[1rem] overflow-x-hidden;
+  padding-top: constant(safe-area-inset-top);
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 @layer utilities {
@@ -25,16 +29,18 @@ body {
   }
 }
 
-.menu-bar, .menu-overlay-bar {
-  @apply fixed top-0 left-0 w-[100%] h-[55px] px-[2em] flex justify-between items-center z-90
+.menu-bar,
+.menu-overlay-bar {
+  @apply fixed top-0 left-0 w-[100%] h-[calc(55px+env(safe-area-inset-top))] px-[2em] flex justify-between items-center z-90;
 }
 
-.menu-bar a, .menu-open span {
-  @apply cursor-pointer
+.menu-bar a,
+.menu-open span {
+  @apply cursor-pointer;
 }
 
 .menu-close span {
-  @apply text-[#fff] cursor-pointer
+  @apply text-[#fff] cursor-pointer;
 }
 
 .menu-overlay {
@@ -59,7 +65,7 @@ body {
 }
 
 .menu-close-icon {
-  @apply hidden lg:flex
+  @apply hidden lg:flex;
 }
 
 .menu-close-icon span {
@@ -69,11 +75,11 @@ body {
 }
 
 .menu-links {
-  @apply relative flex flex-col justify-center lg:justify-start items-center lg:items-start h-full gap-5 lg:gap-10
+  @apply relative flex flex-col justify-center lg:justify-start items-center lg:items-start h-full gap-5 lg:gap-10;
 }
 
 .a {
-  @apply flex flex-col lg:flex-row items-center w-full lg:w-[70%] h-full justify-between
+  @apply flex flex-col lg:flex-row items-center w-full lg:w-[70%] h-full justify-between;
 }
 
 .menu-link-item {
@@ -82,15 +88,15 @@ body {
 }
 
 .menu-link-item-holder {
-  @apply relative
+  @apply relative;
 }
 
 .menu-link-item-holder a {
-  @apply text-[#fff] font-[400] tracking-[-0.02em] leading-[85%] text-[50px] lg:text-[4.5rem]
+  @apply text-[#fff] font-[400] tracking-[-0.02em] leading-[85%] text-[50px] lg:text-[4.5rem];
 }
 
 .menu-info {
-  @apply lg:flex justify-between items-end h-auto lg:h-full hidden 
+  @apply lg:flex justify-between items-end h-auto lg:h-full hidden;
 }
 
 .menu-info-col {
@@ -165,7 +171,6 @@ body {
   display: inline-block;
   overflow: hidden;
 }
-
 
 .intro-title .char,
 .outro-title .char {

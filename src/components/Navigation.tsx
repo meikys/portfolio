@@ -99,16 +99,10 @@ export default function Navigation() {
               : "bg-[var(--bg-secondary)] text-black"
           }`}
         >
-          <div className="menu-logo relative">
+          <div className="menu-logo">
             <Link
               href="/"
-              className="font-[500] absolute left-14 -translate-x-1/2 -translate-y-1/2"
-            >
-              {Brand.brandName}
-            </Link>
-            <Link
-              href="/"
-              className="font-[500] absolute left-14 -translate-x-1/2 -translate-y-1/2 text-inherit"
+              className="font-[500] -translate-x-1/2 -translate-y-1/2"
             >
               {Brand.brandName}
             </Link>

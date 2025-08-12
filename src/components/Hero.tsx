@@ -16,7 +16,7 @@ export default function Hero() {
       id="#hero"
     >
       <div className="absolute top-1/2 left-1/2 lg:shadow-none w-[80vw] max-w-[700px] aspect-square bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2 -z-0"></div>
-      <div className="container flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-[32px] max-h-screen pt-safe pb-safe">
+      <div className="container flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-[32px] h-[75%] pt-safe pb-safe">
         <div className="relative flex flex-col lg:items-start text-center lg:text-left gap-[16px] z-20">
         <h1 className="text-[3rem] tracking-[-2px] leading-[110%] font-bold">
           {HeroText.title}
