@@ -18,7 +18,7 @@ export function useIsOnFooter<T extends HTMLElement>(ref: RefObject<T | null>) {
     }
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // run once on mount
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, [ref]);
 

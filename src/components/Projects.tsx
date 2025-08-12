@@ -31,7 +31,7 @@ export default function Projects() {
             </div>
           </div>
           <div
-            className="w-[500px] h-auto relative"
+            className="w-[100%] h-auto relative"
             style={{ perspective: "1000px" }}
           >
             <Image
@@ -39,7 +39,7 @@ export default function Projects() {
               width={800}
               height={800}
               alt={title}
-              className="relative top-0 max-w-[100vw] -translate-y-5 z-20 -rotate-y-20 shadow-xl"
+              className="relative top-0 w-[100%] max-w-[100vw] -translate-y-5 z-20 -rotate-y-20 shadow-xl"
             />
             <div className={`absolute bottom-0 w-[300px] h-[230px] ${bgColor} z-10 opacity-50}`} />
           </div>
