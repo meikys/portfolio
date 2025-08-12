@@ -15,7 +15,10 @@ html {
 }
 
 body {
-  @apply bg-[#fff] text-[#000] text-[1rem] overflow-x-hidden;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 1rem;
+  overflow-x: hidden;
 }
 
 @layer utilities {
