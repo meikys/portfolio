@@ -12,7 +12,7 @@ import Button from "./ui/Button";
 export default function Hero() {
   return (
     <section
-      className="flex justify-center items-center px-10 bg-[var(--bg-secondary)] h-[100dvh] pt-[15%] pb-[15%]"
+      className="flex justify-center items-center px-10 bg-[var(--bg-secondary)] pt-[15%] pb-[15%] lg:pt-0 lg:pb-0 h-screen"
       id="hero"
     >
       <div className="absolute top-1/2 left-1/2 lg:shadow-none w-[80vw] max-w-[700px] aspect-square bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2 -z-0"></div>
@@ -28,7 +28,7 @@ export default function Hero() {
           {HeroText.button}
         </Button>
       </div>
-     <div className="relative lg:w-1/2 w-full h-auto">
+     <div className="relative lg:w-1/2">
   <Image
     src="/shape1.png"
     alt="Rectangle shape"
@@ -43,7 +43,7 @@ export default function Hero() {
     objectFit="contain"
     className="absolute top-0 left-0"
   />
-  <div className="relative z-20 w-full h-auto">
+  <div className="relative w-[250px] h-[250px] mx-auto">
     <Image
       src="/caesar.png"
       alt="Hero Image"
