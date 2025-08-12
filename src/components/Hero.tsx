@@ -12,7 +12,7 @@ import Button from "./ui/Button";
 export default function Hero() {
   return (
     <section
-      className="min-h-[100dvh] px-10 bg-[var(--bg-secondary)] pt-[var(--safe-top)] pb-[var(--safe-bottom)]"
+      className="min-h-[100dvh] px-6 bg-[var(--bg-secondary)] pt-[var(--safe-top)] pb-[var(--safe-bottom)]"
       id="#hero"
     >
       <div className="absolute top-1/2 left-1/2 lg:shadow-none w-[80vw] max-w-[700px] aspect-square bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2 -z-0"></div>
@@ -34,21 +34,21 @@ export default function Hero() {
           width={800}
           height={800}
           alt="Rectangle shape"
-          className="absolute"
+          className="absolute sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] lg:w-[800px] lg:h-[800px]"
         />
         <Image
           src="/shape2.png"
           width={800}
           height={800}
           alt="Rectangle shape"
-          className="absolute"
+          className="absolute sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] lg:w-[800px] lg:h-[800px]"
         />
         <Image
           src="/caesar.png"
           width={800}
           height={800}
           alt="Hero Image"
-          className="caesar relative z-20"
+          className="caesar relative z-20 sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] lg:w-[800px] lg:h-[800px]"
         />
       </div>
       <div className="relative z-20 lg:w-2/2">
