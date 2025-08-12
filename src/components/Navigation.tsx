@@ -89,7 +89,7 @@ export default function Navigation() {
   }, []);
 
   return (
-    <header ref={container} className="">
+    <header ref={container}>
       <nav>
         <div
           ref={headerRef}
