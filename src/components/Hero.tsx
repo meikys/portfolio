@@ -12,7 +12,7 @@ import Button from "./ui/Button";
 export default function Hero() {
   return (
     <section
-      className="min-h-[100dvh] px-10 bg-[var(--bg-secondary)] pt-[var(--safe-top)] pb-[var(--safe-bottom)]"
+      className="lg:min-h-[100dvh] px-10 bg-[var(--bg-secondary)] pt-[var(--safe-top)] pb-[var(--safe-bottom)]"
       id="#hero"
     >
       <div className="absolute top-1/2 left-1/2 lg:shadow-none w-[80vw] max-w-[700px] aspect-square bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2 -z-0"></div>
