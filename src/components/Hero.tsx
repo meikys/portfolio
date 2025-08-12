@@ -12,7 +12,7 @@ import Button from "./ui/Button";
 export default function Hero() {
   return (
     <section
-      className="flex justify-center items-start lg:items-center px-10 bg-[var(--bg-secondary)] pt-[55px] pb-[200px] lg:pt-0 lg:pb-0 h-screen"
+      className="flex justify-center items-start lg:items-center px-10 bg-[var(--bg-secondary)]git  lg:pt-0 lg:pb-0 h-screen"
       id="hero"
     >
       <div className="absolute top-1/2 left-1/2 lg:shadow-none w-[80vw] max-w-[700px] aspect-square bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2 -z-0"></div>
