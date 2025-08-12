@@ -12,11 +12,11 @@ import Button from "./ui/Button";
 export default function Hero() {
   return (
     <section
-      className="flex justify-center items-center min-h-[100dvh] px-5 bg-[var(--bg-secondary)] pt-[var(--safe-top)] pb-[var(--safe-bottom)]"
+      className="min-h-[100dvh] px-10 bg-[var(--bg-secondary)] pt-[var(--safe-top)] pb-[var(--safe-bottom)]"
       id="#hero"
     >
       <div className="absolute top-1/2 left-1/2 lg:shadow-none w-[80vw] max-w-[700px] aspect-square bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2 -z-0"></div>
-      <div className="container flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-[32px] max-h-[100dvh]">
+      <div className="container flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-[32px]">
         <div className="relative flex flex-col lg:items-start text-center lg:text-left gap-[16px] z-20">
         <h1 className="text-[3rem] tracking-[-2px] leading-[110%] font-bold">
           {HeroText.title}
