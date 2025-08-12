@@ -12,11 +12,11 @@ import Button from "./ui/Button";
 export default function Hero() {
   return (
     <section
-      className="lg:min-h-[100dvh] px-10 bg-[var(--bg-secondary)] pt-[var(--safe-top)] pb-[var(--safe-bottom)]"
+      className="flex justify-center items-center min-h-screen px-10 bg-[var(--bg-secondary)]"
       id="#hero"
     >
       <div className="absolute top-1/2 left-1/2 lg:shadow-none w-[80vw] max-w-[700px] aspect-square bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2 -z-0"></div>
-      <div className="container flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-[32px] pt-[var(--safe-top)]">
+      <div className="container flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-[32px] max-h-screen">
         <div className="relative flex flex-col lg:items-start text-center lg:text-left gap-[16px] z-20">
         <h1 className="text-[3rem] tracking-[-2px] leading-[110%] font-bold">
           {HeroText.title}
@@ -28,29 +28,33 @@ export default function Hero() {
           {HeroText.button}
         </Button>
       </div>
-      <div className="relative lg:w-1/2">
-        <Image
-          src="/shape1.png"
-          width={400}
-          height={400}
-          alt="Rectangle shape"
-          className="absolute sm:w-[200px] sm:h-[200px] md:w-[600px] md:h-[600px] lg:w-[800px] lg:h-[800px]"
-        />
-        <Image
-          src="/shape2.png"
-          width={400}
-          height={400}
-          alt="Rectangle shape"
-          className="absolute sm:w-[200px] sm:h-[200px] md:w-[600px] md:h-[600px] lg:w-[800px] lg:h-[800px]"
-        />
-        <Image
-          src="/caesar.png"
-          width={400}
-          height={400}
-          alt="Hero Image"
-          className="caesar relative z-20 sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] lg:w-[800px] lg:h-[800px]"
-        />
-      </div>
+     <div className="relative lg:w-1/2 w-full h-auto">
+  <Image
+    src="/shape1.png"
+    alt="Rectangle shape"
+    layout="fill"
+    objectFit="contain" // nebo "cover" podle potřeby
+    className="absolute top-0 left-0"
+  />
+  <Image
+    src="/shape2.png"
+    alt="Rectangle shape"
+    layout="fill"
+    objectFit="contain"
+    className="absolute top-0 left-0"
+  />
+  <div className="relative z-20 w-full h-auto">
+    <Image
+      src="/caesar.png"
+      alt="Hero Image"
+      layout="responsive"
+      width={400}
+      height={400}
+      className="caesar"
+      priority
+    />
+  </div>
+</div>
       <div className="relative z-20 lg:w-2/2">
         <ul className="flex gap-[8px] items-center">
           {SocialLinks.map((link, index) => (
