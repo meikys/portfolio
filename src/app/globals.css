@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --safe-top: max(env(safe-area-inset-top, 0px), 55px);
+  --safe-top: max(env(safe-area-inset-top, 0px), 44px);
   --safe-bottom: max(env(safe-area-inset-bottom, 0px), 34px);
   --safe-left: env(safe-area-inset-left, 0px);
   --safe-right: env(safe-area-inset-right, 0px);
