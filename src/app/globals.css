@@ -38,7 +38,7 @@ body {
 }
 
 .menu-overlay {
-  @apply fixed top-0 left-0 w-[100vw] h-screen p-[2em] text-[#fff] bg-[#000] z-100 flex;
+  @apply fixed top-0 left-0 w-[100%] h-screen p-[2em] text-[#fff] bg-[#000] z-100 flex;
   clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
   overflow: hidden;
 }

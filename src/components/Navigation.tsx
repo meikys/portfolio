@@ -14,7 +14,6 @@ import { useIsOnFooter } from "@/hooks/useIsOnFooter";
 
 import { Brand } from "@/data/data";
 
-import { setupBorderOnScroll } from "@/animations/BorderAnim";
 
 export default function Navigation() {
   const container = useRef<HTMLDivElement | null>(null);
@@ -67,12 +66,6 @@ export default function Navigation() {
 
   useEffect(() => {
     if (!headerRef.current) return;
-
-    const cleanup = setupBorderOnScroll(headerRef.current);
-
-    return () => {
-      cleanup();
-    };
   }, []);
 
   useEffect(() => {
@@ -93,12 +86,6 @@ export default function Navigation() {
 
   useEffect(() => {
     if (!headerRef.current) return;
-
-    const cleanup = setupBorderOnScroll(headerRef.current);
-
-    return () => {
-      cleanup();
-    };
   }, []);
 
   return (
