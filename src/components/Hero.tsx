@@ -12,11 +12,14 @@ import Button from "./ui/Button";
 export default function Hero() {
   return (
     <section
-      className="flex justify-center items-center px-10 bg-[var(--bg-secondary)] "
-      id="#hero"
+      className="flex justify-center items-center px-10 bg-[var(--bg-secondary)] h-[100dvh] pt-[env(safe-area-inset-top, 20px)] pb-[env(safe-area-inset-top, 20px)]"
+      id="hero" style={{
+        paddingTop: `calc(60px + env(safe-area-inset-top))`,
+        paddingBottom: "env(safe-area-inset-bottom)",
+      }}
     >
       <div className="absolute top-1/2 left-1/2 lg:shadow-none w-[80vw] max-w-[700px] aspect-square bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2 -z-0"></div>
-      <div className="container flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-[32px] max-h-screen">
+      <div className="container flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-[32px]">
         <div className="relative flex flex-col lg:items-start text-center lg:text-left gap-[16px] z-20">
         <h1 className="text-[3rem] tracking-[-2px] leading-[110%] font-bold">
           {HeroText.title}
@@ -33,7 +36,7 @@ export default function Hero() {
     src="/shape1.png"
     alt="Rectangle shape"
     layout="fill"
-    objectFit="contain" // nebo "cover" podle potřeby
+    objectFit="contain"
     className="absolute top-0 left-0"
   />
   <Image

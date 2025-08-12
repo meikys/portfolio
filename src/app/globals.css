@@ -10,6 +10,21 @@
   --bg-secondary: #F9F9F9;
 }
 
+@layer utilities {
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 20px);
+  }
+  .pr-safe {
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+  }
+  .pl-safe {
+    padding-left: env(safe-area-inset-left, 0px);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -186,7 +201,7 @@ body {
   .outro-title {
     left: calc(50% + 4rem);
   }
-  
+
   .intro-title .char,
   .outro-title .char {
     margin-top: 0.5rem;
