@@ -12,11 +12,8 @@ import Button from "./ui/Button";
 export default function Hero() {
   return (
     <section
-      className="flex justify-center items-center px-10 bg-[var(--bg-secondary)] h-[100dvh] pt-[env(safe-area-inset-top, 20px)] pb-[env(safe-area-inset-top, 20px)]"
-      id="hero" style={{
-        paddingTop: `calc(60px + env(safe-area-inset-top))`,
-        paddingBottom: "env(safe-area-inset-bottom)",
-      }}
+      className="flex justify-center items-center px-10 bg-[var(--bg-secondary)] h-[100dvh] pt-[15%] pb-[15%]"
+      id="hero"
     >
       <div className="absolute top-1/2 left-1/2 lg:shadow-none w-[80vw] max-w-[700px] aspect-square bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2 -z-0"></div>
       <div className="container flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-[32px]">
