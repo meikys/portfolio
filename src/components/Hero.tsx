@@ -12,12 +12,12 @@ import Button from "./ui/Button";
 export default function Hero() {
   return (
     <section
-      className="flex justify-center items-center px-5 bg-[var(--bg-secondary)] min-h-screen"
+      className="flex justify-center items-center px-5 bg-[var(--bg-secondary)] min-h-screen ios-pb"
       id="hero"
     >
       <div className="absolute top-1/2 left-1/2 lg:shadow-none w-[80vw] max-w-[700px] aspect-square bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2 -z-0"></div>
-      <div className="container flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-[32px] ios-pb max-h-screen">
-        <div className="relative flex flex-col items-center text-center lg:text-left gap-[16px] z-20">
+      <div className="container flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-[32px] max-h-screen">
+        <div className="relative flex flex-col items-center lg:items-start text-center gap-[16px] z-20">
         <h1 className="text-[3rem] tracking-[-2px] leading-[110%] font-bold">
           {HeroText.title}
         </h1>
@@ -43,7 +43,7 @@ export default function Hero() {
     objectFit="contain"
     className="absolute top-0 left-0"
   />
-  <div className="relative w-[250px] h-[250px] mx-auto">
+  <div className="relative w-[250px] h-[250px] lg:w-[550px] lg:h-[550px] mx-auto">
     <Image
       src="/caesar.png"
       alt="Hero Image"

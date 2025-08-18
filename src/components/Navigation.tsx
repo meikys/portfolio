@@ -96,7 +96,7 @@ export default function Navigation() {
           className={`menu-bar fixed top-0 w-full z-50 transition-colors duration-100 ${
             isOnFooter
               ? "bg-black text-white"
-              : "bg-[var(--bg-secondary)] text-black"
+              : "bg-[var(--bg-secondary)] text-[#474747]"
           }`}
         >
           <div className="menu-logo">
@@ -108,7 +108,7 @@ export default function Navigation() {
             </Link>
           </div>
           <div className="menu-open">
-            <ul className="hidden lg:flex flex-row gap-[32px] font-[500]">
+            <ul className="hidden lg:flex flex-row gap-[32px] font-[500] text-[#474747] uppercase">
               {NavLinks.map((link, index) => (
                 <li className="flex" key={index}>
                   <Link href={link.path}>{link.label}</Link>
