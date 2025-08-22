@@ -25,7 +25,7 @@ export default function Projects() {
               <p className="text-[0.9rem] text-[#474747] tracking-[0.5%] leading-[150%]">
                 {description}
               </p>
-              <Button variant="primary" className="ml-auto">
+              <Button variant="primary" className="ml-auto lg:hidden">
                 {button}
               </Button>
             </div>
@@ -34,6 +34,9 @@ export default function Projects() {
             className="w-[100%] lg:w-[50%] h-auto relative"
             style={{ perspective: "1000px" }}
           >
+            <Button variant="primary" className="absolute lg:top-[50%] lg:-left-[25%] z-50 ml-auto group-hover:before:w-full hidden lg:block">
+                {button}
+            </Button>
             <Image
               src={imageSrc}
               width={800}

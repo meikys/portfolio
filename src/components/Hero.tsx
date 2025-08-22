@@ -12,7 +12,7 @@ import Button from "./ui/Button";
 export default function Hero() {
   return (
     <section
-      className="flex justify-center items-center bg-[var(--bg-secondary)] min-h-screen px-10 lg:px-0"
+      className="flex justify-center items-center bg-[var(--bg-secondary)] min-h-screen px-10"
       id="hero"
     >
       <div className="absolute top-1/2 left-1/2 lg:shadow-none w-[80vw] max-w-[700px] aspect-square bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2 -z-0"></div>
@@ -55,8 +55,8 @@ export default function Hero() {
     />
   </div>
 </div>
-      <div className="relative z-20 lg:w-2/2">
-        <ul className="flex gap-[8px] items-center">
+      <div className="z-20 lg:w-2/2">
+        <ul className="flex justify-center lg:justify-start gap-[8px]">
           {SocialLinks.map((link, index) => (
             <React.Fragment key={index}>
               <li className="text-[0.9rem] lg:text-[1rem] text-[#474747] tracking-[0.5%] leading-[150%] font-[500]">

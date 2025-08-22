@@ -1,5 +1,7 @@
-import { Behance, Discord, Github, Instagram } from "@/components/icons/svg/Icons";
-
+import Behance from '@/components/icons/svg/Behance';
+import Discord from '@/components/icons/svg/Discord';
+import Github from '@/components/icons/svg/Github';
+import Instagram from '@/components/icons/svg/Instagram';
 
 export default function IconsOutput() {
   return (
