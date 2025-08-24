@@ -1,7 +1,8 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+
 import DeveloperDesk from "@/components/pages/about/DeveloperDesk";
+import Marquee from "@/components/pages/about/Marquee";
 
 export default function About() {
   return (
@@ -9,6 +10,7 @@ export default function About() {
       <Navigation />
       <main>
         <DeveloperDesk />
+        <Marquee />
       </main>
       <footer>
         <Footer />
