@@ -8,7 +8,7 @@ export default function About() {
   return (
     <>
       <Navigation />
-      <main>
+      <main className="pb-save">
         <DeveloperDesk />
         <Marquee />
       </main>

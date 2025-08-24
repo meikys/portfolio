@@ -28,6 +28,10 @@ body {
   overflow-x: hidden;
 }
 
+.pb-save {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
 .menu-bar, .menu-overlay-bar {
   @apply fixed top-0 left-0 w-[100%] h-[55px] px-[2em] flex justify-between items-center z-90
 }
