@@ -28,8 +28,8 @@ body {
   overflow-x: hidden;
 }
 
-.pb-save {
-  padding-bottom: env(safe-area-inset-bottom);
+.pb-safe {
+  padding-bottom: calc(55px + env(safe-area-inset-bottom, 0px));
 }
 
 .menu-bar, .menu-overlay-bar {
