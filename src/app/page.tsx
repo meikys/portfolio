@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <PreLoader />
       <Navigation />
-      <main className="pb-save">
+      <main className="pb-save-top pb-safe-bottom">
         <Hero />
         <Welcomer />
         <Projects />
