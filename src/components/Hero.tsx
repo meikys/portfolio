@@ -43,7 +43,7 @@ export default function Hero() {
     objectFit="contain"
     className="absolute top-0 left-0"
   />
-  <div className="relative w-[200px] lg:w-auto h-[200px] lg:h-auto mx-auto">
+  <div className="relative w-[150px] lg:w-auto h-[150px] lg:h-auto mx-auto">
     <Image
       src="/caesar.png"
       alt="Hero Image"
