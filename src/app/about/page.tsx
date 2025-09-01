@@ -9,7 +9,7 @@ export default function About() {
   return (
     <>
       <Navigation />
-      <main className="pb-save-top pb-safe-bottom">
+      <main>
         <DeveloperDesk />
         <Marquee />
         <Information />
