@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import DeveloperDesk from "@/components/pages/about/DeveloperDesk";
 import Marquee from "@/components/pages/about/Marquee";
 import Information from "@/components/pages/about/Information";
+import Quote from "@/components/pages/about/Quote";
 
 export default function About() {
   return (
@@ -13,6 +14,7 @@ export default function About() {
         <DeveloperDesk />
         <Marquee />
         <Information />
+        <Quote />
       </main>
       <footer>
         <Footer />

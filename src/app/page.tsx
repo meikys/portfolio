@@ -7,17 +7,19 @@ import Welcomer from "@/components/Welcomer";
 import Projects from "@/components/Projects";
 import Farewell from "@/components/Farewell";
 import Footer from "@/components/Footer";
+import Reviews from "@/components/Reviews";
 
 export default function Home() {
   return (
     <>
       <PreLoader />
       <Navigation />
-      <main className="pb-save-top pb-safe-bottom">
+      <main>
         <Hero />
         <Welcomer />
         <Projects />
         <Farewell />
+        <Reviews />
       </main>
       <footer>
         <Footer />
