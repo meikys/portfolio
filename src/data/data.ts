@@ -33,6 +33,12 @@ export const WelcomerSection = {
   description: "Digital solutions designed to support your growth. Fast, clear, and reliable. Crafted with an eye for detail.",
 }
 
+export const FarawellSection = {
+  title: "Farewell Traveler",
+  description: "Your journey doesn’t end here, traveler. More stories await — see the rest of my work.",
+  button: "View All My Projects",
+}
+
 export const FooterText = {
   firstTitle: "Let's build something",
   secondTitle: "cool together!",

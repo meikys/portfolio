@@ -17,12 +17,13 @@ export default function Reviews() {
                 <p className="text-[1rem] text-[#474747] tracking-[0.5%] leading-[150%]">
                     Echoes from past journeys, told by those who walked the path.
                 </p>
-                {reviews.map(({ id, personalName, brandName, review }) => (
-                <div key={id} className="flex flex-col gap-[16px]">
+                <div className="w-full flex flex-col gap-[16px]">
+                    {reviews.map(({ id, personalName, brandName, review }) => (
+                <div key={id} className="max-w-[300px] flex flex-col gap-[16px] border-b-1 border-red-500">
                     <div className="flex items-center gap-[8px]">
-                        <p className="flex text-[1rem] text-[#000000] tracking-[0.5%] leading-[150%] font-bold">{personalName}</p> 
+                        <h4 className="text-[1.25rem] text-[#000000] tracking-[0.5px] leading-[160%] font-bold">{personalName}</h4> 
                         <span className="font-normal">-</span>
-                        <p className="text-[0.8rem] text-[#474747] tracking-[0.5%] leading-[150%]">{brandName}</p>
+                        <h5 className="text-[0.875rem] text-[#474747] tracking-[0.5px] leading-[160%]">{brandName}</h5>
                     </div>
                     <p>{review}</p>
                     <span>
@@ -30,6 +31,7 @@ export default function Reviews() {
                     </span>
                 </div>
                 ))}
+                </div>
             </div>
         </section>
     );
