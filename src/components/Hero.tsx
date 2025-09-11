@@ -16,7 +16,7 @@ export default function Hero() {
       id="hero"
     >
       <div className="absolute top-1/2 left-1/2 lg:shadow-none w-[80vw] max-w-[700px] aspect-square bg-[var(--bg-primary)] rounded-full transform -translate-x-1/2 -translate-y-1/2 -z-0"></div>
-      <div className="container mx-auto flex flex-col lg:flex-row lg:flex-wrap justify-start items-center gap-[32px] pb-safe-bottom pb-safe-top lg:pb-0 min-h-screen">
+      <div className="container mx-auto flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-[32px] pb-safe-bottom pb-safe-top lg:pb-0 min-h-screen">
         <div className="relative flex flex-col items-center lg:items-start text-center gap-[16px] z-20">
         <h1 className="text-[3rem] tracking-[-2px] leading-[110%] font-bold">
           {HeroText.title}
@@ -43,7 +43,7 @@ export default function Hero() {
     objectFit="contain"
     className="absolute top-0 left-0"
   />
-  <div className="relative w-[150px] lg:w-auto h-[150px] lg:h-auto mx-auto">
+  <div className="relative w-[175px] lg:w-auto h-[175px] lg:h-auto mx-auto">
     <Image
       src="/caesar.png"
       alt="Hero Image"
@@ -53,7 +53,7 @@ export default function Hero() {
       className="caesar"
       priority
     />
-  </div>
+</div>
 </div>
       <div className="z-20 lg:w-2/2">
         <ul className="flex justify-center lg:justify-start gap-[8px]">
