@@ -19,7 +19,7 @@ export default function Reviews() {
                 </p>
                 <div className="w-full flex flex-col gap-[16px]">
                     {reviews.map(({ id, personalName, brandName, review }) => (
-                <div key={id} className="max-w-[300px] flex flex-col gap-[16px] border-b-1 border-red-500">
+                <div key={id} className="max-w-[300px] flex flex-col gap-[16px] pb-[16px] border-b-1 border-[#474747]/10">
                     <div className="flex items-center gap-[8px]">
                         <h4 className="text-[1.25rem] text-[#000000] tracking-[0.5px] leading-[160%] font-bold">{personalName}</h4> 
                         <span className="font-normal">-</span>
