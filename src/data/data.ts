@@ -33,45 +33,6 @@ export const WelcomerSection = {
   description: "Digital solutions designed to support your growth. Fast, clear, and reliable. Crafted with an eye for detail.",
 }
 
-export const projects = [
-  {
-    id: 1,
-    number: "01",
-    title: "Personal Portfolio",
-    description: "My personal portfolio built with Next.js and styled using Tailwind CSS.",
-    button: "View project",
-    bgColor: "bg-[#0055cc]",
-    imageSrc: "/projects/project1.png",
-  },
-  {
-    id: 2,
-    number: "02",
-    title: "BloomHouse",
-    description: "Personal website for the company BloomHouse.",
-    button: "View project",
-    bgColor: "bg-[#55cc55]",
-    imageSrc: "/projects/project1.png",
-  },
-  {
-    id: 3,
-    number: "03",
-    title: "ManeStudio",
-    description: "Personal website for the company ManeStudio.",
-    button: "View project",
-    bgColor: "bg-[#ffcc00]",
-    imageSrc: "/projects/project1.png",
-  },
-  {
-    id: 4,
-    number: "04",
-    title: "TechNest",
-    description: "Personal website for the company TechNest.",
-    button: "View project",
-    bgColor: "bg-[#cc5555]",
-    imageSrc: "/projects/project1.png",
-  },
-];
-
 export const FooterText = {
   firstTitle: "Let's build something",
   secondTitle: "cool together!",

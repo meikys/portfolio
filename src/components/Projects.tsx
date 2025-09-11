@@ -2,7 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 
-import { projects } from "@/data/data"
+import { projects } from "@/data/projects"
 import Button from "./ui/Button";
 
 export default function Projects() {
