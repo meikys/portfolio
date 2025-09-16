@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function DeveloperDesk() {
   return (
     <section className="flex flex-col lg:items-center justify-center min-h-screen pb-save-top pb-safe-bottom px-10 bg-[var(--bg-secondary)]">
-      <h2 className="text-[2rem] tracking-[-2%] leading-[110%] font-bold mb-[16px] lg:hidden">Beyond the Surface</h2>
+      <h2 className="text-[2rem] tracking-[-2%] leading-[110%] font-bold mb-[16px] lg:hidden">Deeper ...</h2>
         <div className="container mx-auto grid items-center grid-cols-1 lg:grid-cols-2 grid-rows-1 lg:grid-rows-2 gap-[16px]">
             <p className="text-[1rem] lg:text-[1.5rem] text-[#000000] tracking-[0.5%] lg:tracking-[1%] leading-[150%] lg:leading-[180%] order-2 lg:order-none max-w-[500px] prose">
                Hi! I’m glad you’re here. My name is <b>Erik Dunca</b>, and I’m a web designer with a keen eye for detail. I help people <b>launch</b> their ideas or take existing projects to the next level. In my work, I combine <b>aesthetics</b> with <b>functionality</b> so your business looks professional and keeps <b>growing</b>.

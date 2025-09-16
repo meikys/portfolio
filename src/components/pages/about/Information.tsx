@@ -1,5 +1,14 @@
 import React from "react";
 
+import {
+  SiHtml5,
+  SiCss3,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiGithub,
+} from "react-icons/si";
+import { FiLayout, FiCode, FiCpu, FiEdit, FiUsers } from "react-icons/fi";
+
 export default function Information() {
   return (
     <>
@@ -44,11 +53,32 @@ export default function Information() {
             <h3 className="text-[2rem] tracking-[-1.5%] leading-[130%] font-bold">
               How I work.
             </h3>
-            <p className="text-[1rem] lg:text-[1.5rem] text-[#000000] tracking-[0.5%] lg:tracking-[1%] leading-[150%] lg:leading-[180%] lg:w-[450px] lg:h-[400px] order-3 lg:order-none max-w-prose">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-              eos eius ab, sed consequuntur, quaerat minus quidem neque ratione
-              quisquam qui accusamus dolor corporis voluptatem et placeat.
-              Temporibus, sit velit.
+            <p className="text-[1rem] text-[#000000] tracking-[0.5%] leading-[150%] max-w-prose">
+              My process begins with a discussion with the client to fully
+              understand their goals and vision. From there, I analyze the brand
+              to ensure that every design decision aligns with its identity and
+              values. If the client does not have a pre-defined design, I create
+              one tailored specifically to their brand.
+            </p>
+            <p className="text-[1rem] text-[#000000] tracking-[0.5%] leading-[150%] max-w-prose">
+              For example, a website for a suit retailer would use a clean
+              black-and-white design to convey elegance and simplicity, while a
+              website for a gaming community might feature more vibrant colors
+              and dynamic visuals to capture attention and showcase energy
+              within that space.
+            </p>
+            <p className="text-[1rem] text-[#000000] tracking-[0.5%] leading-[150%] max-w-prose">
+              Once the design direction is set, I start building the layout,
+              keeping it clean and user-friendly. Each section is presented to
+              the client as it is completed, allowing for feedback and
+              adjustments before moving on. This ensures that the project stays
+              aligned with the client’s expectations.
+            </p>
+            <p className="text-[1rem] text-[#000000] tracking-[0.5%] leading-[150%] max-w-prose">
+              Approved sections are finalized and I move forward without
+              revisiting them, keeping the process efficient. This approach
+              allows both the client and me to save time, maintain momentum, and
+              deliver a high-quality product as quickly as possible.
             </p>
           </div>
         </div>
@@ -60,12 +90,56 @@ export default function Information() {
             <h3 className="text-[2rem] tracking-[-1.5%] leading-[130%] font-bold">
               My skills.
             </h3>
-            <p className="text-[1rem] lg:text-[1.5rem] text-[#000000] tracking-[0.5%] lg:tracking-[1%] leading-[150%] lg:leading-[180%] lg:w-[450px] lg:h-[400px] order-3 lg:order-none max-w-prose">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-              eos eius ab, sed consequuntur, quaerat minus quidem neque ratione
-              quisquam qui accusamus dolor corporis voluptatem et placeat.
-              Temporibus, sit velit.
+
+            <p className="text-[1rem] text-[#000000] tracking-[0.5%] leading-[150%] max-w-prose">
+              Through different projects, I’ve gained experience with
+              technologies and tools that allow me to build modern and
+              functional websites. My main technical skills include:
             </p>
+
+            <ul className="mt-4 flex flex-col gap-[16px]">
+              <li className="flex items-center gap-[8px]">
+                <SiHtml5 className="text-orange-600 w-7 h-7" /> HTML & CSS
+              </li>
+              <li className="flex items-center gap-[8px]">
+                <SiNextdotjs className="text-black w-7 h-7" /> Next.js
+              </li>
+              <li className="flex items-center gap-[8px]">
+                <SiTailwindcss className="text-blue-400 w-7 h-7" /> Tailwind CSS
+              </li>
+              <li className="flex items-center gap-[8px]">
+                <SiGithub className="text-gray-800 w-7 h-7" /> GitHub
+              </li>
+            </ul>
+
+            <p className="text-[1rem] text-[#000000] tracking-[0.5%] leading-[150%] max-w-prose mt-6">
+              Beyond the technical side, I also focus on the outcome – making
+              websites look professional, reflect the brand’s identity, and
+              remain easy to use. My main focus areas are:
+            </p>
+
+            <ul className="mt-4 flex flex-col gap-[16px]">
+              <li className="flex items-center gap-[8px]">
+                <FiLayout className="text-black w-7 h-7" /> Responsive and
+                modern layouts
+              </li>
+              <li className="flex items-center gap-[8px]">
+                <FiCode className="text-black w-7 h-7" /> Clean and maintainable
+                code
+              </li>
+              <li className="flex items-center gap-[8px]">
+                <FiCpu className="text-black w-7 h-7" /> Performance and
+                usability optimization
+              </li>
+              <li className="flex items-center gap-[8px]">
+                <FiEdit className="text-black w-7 h-7" /> Brand-aligned design
+                decisions
+              </li>
+              <li className="flex items-center gap-[8px]">
+                <FiUsers className="text-black w-7 h-7" /> Effective
+                communication and collaboration with clients
+              </li>
+            </ul>
           </div>
         </div>
       </section>
