@@ -6,32 +6,61 @@ export default function Marquee() {
 <div className="stock-ticker">
 
   <ul aria-hidden="true">
-    <li className="minus">
-      <span className="company">AAPL</span>
+    <li>
+      <span>AAPL</span>
     </li>
-    <li className="minus">
-      <span className="company">AAPL</span>
+    <li>
+      <span>AAPL</span>
     </li>
-    <li className="minus">
-      <span className="company">AAPL</span>
+    <li>
+      <span>AAPL</span>
     </li>
-    <li className="minus">
-      <span className="company">AAPL</span>
+    <li>
+      <span>AAPL</span>
     </li>
-    <li className="minus">
-      <span className="company">AAPL</span>
+    <li>
+      <span>AAPL</span>
     </li>
-    <li className="minus">
-      <span className="company">AAPL</span>
+    <li>
+      <span>AAPL</span>
     </li>
-    <li className="minus">
-      <span className="company">AAPL</span>
+    <li>
+      <span>AAPL</span>
     </li>
-    <li className="minus">
-      <span className="company">AAPL</span>
+    <li>
+      <span>AAPL</span>
     </li>
-    <li className="minus">
-      <span className="company">AAPL</span>
+    <li>
+      <span>AAPL</span>
+    </li>
+  </ul>
+  <ul aria-hidden="true">
+    <li>
+      <span>AAPL</span>
+    </li>
+    <li>
+      <span>AAPL</span>
+    </li>
+    <li>
+      <span>AAPL</span>
+    </li>
+    <li>
+      <span>AAPL</span>
+    </li>
+    <li>
+      <span>AAPL</span>
+    </li>
+    <li>
+      <span>AAPL</span>
+    </li>
+    <li>
+      <span>AAPL</span>
+    </li>
+    <li>
+      <span>AAPL</span>
+    </li>
+    <li>
+      <span>AAPL</span>
     </li>
   </ul>
 </div>
