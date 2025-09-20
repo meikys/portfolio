@@ -13,8 +13,8 @@ export default function Information() {
   return (
     <>
       <section className="py-[64px] bg-[var(--bg-secondary)]">
-        <div className="container mx-auto flex flex-col items-center gap-[32px] px-10">
-          <div className="flex flex-col lg:flex-row gap-[16px] lg:gap-[5rem]">
+        <div className="container mx-auto flex flex-col gap-[32px] px-10">
+          <div className="flex flex-col lg:flex-row gap-[16px] lg:gap-[5rem] lg:justify-between">
             <h3 className="text-[2rem] tracking-[-1.5%] leading-[130%] font-bold">
               About me.
             </h3>
@@ -52,8 +52,8 @@ export default function Information() {
       </section>
 
       <section className="py-[64px] bg-[var(--bg-primary)]">
-        <div className="container mx-auto flex flex-col items-center gap-[32px] px-10">
-          <div className="flex flex-col lg:flex-row gap-[16px] lg:gap-[5rem]">
+        <div className="container mx-auto flex flex-col gap-[32px] px-10">
+          <div className="flex flex-col lg:flex-row gap-[16px] lg:gap-[5rem] lg:justify-between">
             <h3 className="text-[2rem] tracking-[-1.5%] leading-[130%] font-bold">
               How I work.
             </h3>
@@ -91,8 +91,8 @@ export default function Information() {
       </section>
 
       <section className="py-[64px] bg-[var(--bg-secondary)]">
-        <div className="container mx-auto flex flex-col items-center gap-[32px] px-10">
-          <div className="flex flex-col lg:flex-row gap-[16px] lg:gap-[5rem]">
+        <div className="container mx-auto flex flex-col gap-[32px] px-10">
+          <div className="flex flex-col lg:flex-row gap-[16px] lg:gap-[5rem] lg:justify-between">
             <h3 className="text-[2rem] tracking-[-1.5%] leading-[130%] font-bold">
               My skills.
             </h3>

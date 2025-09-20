@@ -7,7 +7,7 @@ import Welcomer from "@/components/Welcomer";
 import Projects from "@/components/Projects";
 import Farewell from "@/components/Farewell";
 import Footer from "@/components/Footer";
-import Reviews from "@/components/Reviews";
+import Reviews from "@/components/pages/about/Reviews";
 
 export default function Home() {
   return (
@@ -19,7 +19,6 @@ export default function Home() {
         <Welcomer />
         <Projects />
         <Farewell />
-        <Reviews />
       </main>
       <footer>
         <Footer />
