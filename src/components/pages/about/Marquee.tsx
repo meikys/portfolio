@@ -4,7 +4,6 @@ export default function Marquee() {
   return (
     <section className="h-[25vh] w-full py-[32px] bg-[#000000]">
 <div className="stock-ticker">
-
   <ul aria-hidden="true">
     <li>
       <span>AAPL</span>
@@ -34,6 +33,7 @@ export default function Marquee() {
       <span>AAPL</span>
     </li>
   </ul>
+  <br />
   <ul aria-hidden="true">
     <li>
       <span>AAPL</span>
