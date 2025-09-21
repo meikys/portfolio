@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import DeveloperDesk from "@/components/pages/about/DeveloperDesk";
 import Marquee from "@/components/pages/about/Marquee";
 import Information from "@/components/pages/about/Information";
-import Quote from "@/components/pages/about/Quote";
 import Reviews from "@/components/pages/about/Reviews";
 
 export default function About() {
