@@ -3,6 +3,7 @@ import Button from "@/components/ui/Button";
 import { CiCalendar, CiUser } from "react-icons/ci";
 import { reviews } from "@/data/reviews";
 import Stars from "@/components/ui/Rating";
+import { FaCrown } from "react-icons/fa";
 
 export default function Reviews() {
   return (
@@ -30,7 +31,7 @@ export default function Reviews() {
           ({ id, personalName, projectDescription, techHead, tech, user, date, review, feedHead, rating }) => (
             <div
               key={id}
-              className="text-center lg:text-left w-full min-h-[50vh] lg:min-h-[25vh] lg:py-0 group hover:bg-[#FFFFFF] transition ease-in-out duration-500 cursor-pointer lg:px-10 lg:border-b-1 lg:border-[#474747]/20"
+              className="text-center lg:text-left w-full min-h-[50vh] lg:min-h-[25vh] lg:py-0 group hover:bg-[#FFFFFF] transition ease-in-out duration-500 cursor-pointer lg:px-10 lg:border-b lg:border-[#474747]/20 last:border-b-0"
             >
               <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-[32px] lg:container lg:mx-auto lg:px-10 py-[64px]">
               <div className="flex flex-col lg:items-start gap-[16px]">
@@ -68,8 +69,9 @@ export default function Reviews() {
                   <CiCalendar className="w-4 h-4" /> {date}
                 </span>
               </div>
+                <hr className="w-[40%] h-0 border-t-1 border-[#474747]/20" />
                 <p className="max-w-prose">{review}</p>
-
+              <hr className="w-[30%] h-0 border-t-1 border-[#474747]/20" /> 
                 <div className="flex flex-col gap-[16px]">
                   <span className="flex mx-auto gap-[8px] px-3 py-1 text-xs font-medium rounded-full bg-[#474747]/20 text-black">
                     {feedHead}
